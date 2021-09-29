@@ -36,7 +36,6 @@ namespace DataLayer
         public DateTime CreateDate { get; set; }
 
         public virtual Page Page { get; set; }
-
         public PageComment()
         {
 

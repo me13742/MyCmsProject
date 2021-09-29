@@ -41,9 +41,10 @@ namespace DataLayer
         [Display(Name = "تاریخ ایجاد")]
         public DateTime CreateDate { get; set; }
 
-        public virtual PageGroup PageGroup { get; set; }
 
         public virtual List<PageComment> PageComments { get; set; }
+
+        public virtual PageGroup PageGroup { get; set; }
 
         public Page()
         {

@@ -17,8 +17,7 @@ namespace DataLayer
         [MaxLength(150)]
         public string GroupTitle { get; set; }
 
-        public virtual List<Page> pages { get; set; }
-
+        public virtual List<Page> Pages { get; set; }
         public PageGroup()
         {
 

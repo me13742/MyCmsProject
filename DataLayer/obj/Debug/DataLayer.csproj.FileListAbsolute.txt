@@ -8,3 +8,5 @@ c:\Users\v\documents\visual studio 2017\Projects\MyCms\DataLayer\bin\Debug\Entit
 c:\Users\v\documents\visual studio 2017\Projects\MyCms\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
 c:\Users\v\documents\visual studio 2017\Projects\MyCms\DataLayer\bin\Debug\EntityFramework.xml
 c:\Users\v\documents\visual studio 2017\Projects\MyCms\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\v\documents\visual studio 2017\Projects\MyCms\DataLayer\obj\Debug\DataLayer.Migrations.Initial_Database.resources
+C:\Users\v\documents\visual studio 2017\Projects\MyCms\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.Cache
