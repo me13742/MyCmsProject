@@ -70,3 +70,5 @@ c:\users\v\documents\visual studio 2017\Projects\MyCms\MyCms\bin\DataLayer.pdb
 c:\users\v\documents\visual studio 2017\Projects\MyCms\MyCms\bin\DataLayer.dll.config
 C:\Users\v\Documents\Visual Studio 2017\Projects\MyCms\MyCms\bin\EntityFramework.dll
 C:\Users\v\Documents\Visual Studio 2017\Projects\MyCms\MyCms\bin\EntityFramework.xml
+C:\Users\v\Documents\Visual Studio 2017\Projects\MyCms\MyCms\bin\EntityFramework.SqlServer.dll
+C:\Users\v\Documents\Visual Studio 2017\Projects\MyCms\MyCms\bin\EntityFramework.SqlServer.xml
