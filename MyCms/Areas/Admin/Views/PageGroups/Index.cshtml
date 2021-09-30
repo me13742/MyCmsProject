@@ -24,9 +24,12 @@
                 @Html.DisplayFor(modelItem => item.GroupTitle)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.GroupID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.GroupID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.GroupID })
+                <a class="btn btn-sm btn-warning" onclick="editGroup(@item.GroupID)">
+                    <i class="glyphicon glyphicon-edit"></i>
+                </a>
+                <a class="btn btn-sm btn-danger" onclick="deleteGroup(@item.GroupID)">
+                    <i class="glyphicon glyphicon-trash"></i>
+                </a>
             </td>
         </tr>
     }
@@ -47,13 +50,29 @@
 </div>
 <script src="~/Scripts/modal.js"></script>
 @section scripts{
-<script>
-    $("#btnNewGroup").click(function () {
-        $.get("/Admin/PageGroups/Create", function (result) {
-            $("#myModal").modal();
-            $("#myModalLabel").html("افزودن گروه جدید");
-            $("#myModalBody").html(result);
+    <script>
+        $("#btnNewGroup").click(function () {
+            $.get("/Admin/PageGroups/Create", function (result) {
+                $("#myModal").modal();
+                $("#myModalLabel").html("افزودن گروه جدید");
+                $("#myModalBody").html(result);
+            });
         });
-    });
-</script>
+
+        function editGroup(id) {
+            $.get("/Admin/PageGroups/Edit/" + id, function (result) {
+                $("#myModal").modal();
+                $("#myModalLabel").html("ویرایش گروه");
+                $("#myModalBody").html(result);
+            });
+    }
+
+        function deleteGroup(id) {
+            $.get("/Admin/PageGroups/Delete/" + id, function (result) {
+                $("#myModal").modal();
+                $("#myModalLabel").html("حذف گروه");
+                $("#myModalBody").html(result);
+            });
+    }
+    </script>
 }
